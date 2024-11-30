@@ -25,17 +25,22 @@ Este projeto utiliza **Streamlit**, **LangChain** e **Google Generative AI** par
 ### **Passos**
 1. Clone este repositório:
    ```bash
-   git clone <URL_DO_SEU_REPOSITORIO>
-   cd <PASTA_DO_PROJETO>
+   git clone https://github.com/thayrisgabriela/Assistente-Conversacional-Baseado-em-LLM
 
 2. Crie um ambiente virtual e ative-o:
     python -m venv .venv
+    source .venv/bin/activate  #No Windows: .venv\Scripts\activate.ps1 (usando o powershell)
 
 3.Instale as dependências:
     pip install -r requirements.txt
 
 4.Configure as variáveis de ambiente:
-    caso queria usar sua API, mudo a váriavel "GOOGLE_API_KEY" no arquivo .env
+    Crie um arquivo .env na raiz do projeto com o seguinte conteúdo:
+    GOOGLE_API_KEY="SUA_API__KAY"
+
+Acesse esse site para gerar sua API
+    https://aistudio.google.com/app/apikey?hl=pt-br
+
 
 ### **Uso**
 1.Execute a aplicação:
