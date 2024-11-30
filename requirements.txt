@@ -1,0 +1,8 @@
+langchain==0.3.9
+langchain_community==0.3.8
+langchain_google_genai==2.0.6
+protobuf==5.29.0
+PyPDF2==3.0.1
+python-dotenv==1.0.1
+streamlit==1.40.2
+faiss-cpu

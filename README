@@ -1,0 +1,60 @@
+# **Chat com PDFs usando LangChain**
+
+Este projeto utiliza **Streamlit**, **LangChain** e **Google Generative AI** para criar uma interface onde os usuários podem fazer perguntas sobre o conteúdo de documentos PDF. A aplicação processa os PDFs, cria embeddings vetoriais usando FAISS e responde perguntas com base no conteúdo carregado.
+
+---
+
+## **Funcionalidades**
+- **Upload de PDFs:** Os usuários podem enviar múltiplos arquivos PDF para análise.
+- **Processamento de Texto:** Extrai texto dos PDFs e o divide em partes gerenciáveis.
+- **Busca Inteligente:** Oferece diferentes tipos de busca para recuperação de informações:
+  - **Similaridade**: Busca os trechos mais relevantes.
+  - **Threshold de Similaridade**: Define um limite mínimo de relevância para os trechos recuperados.
+  - **MMR (Mean Reciprocal Rank)**: Garante diversidade nos resultados.
+- **Integração com Google Generative AI:** Responde perguntas usando o modelo **Gemini** da Google AI.
+
+---
+
+## **Instalação**
+
+### **Pré-requisitos**
+- **Python 3.10 ou superior**
+- Conta e API Key da **Google Generative AI**
+- Biblioteca FAISS instalada
+
+### **Passos**
+1. Clone este repositório:
+   ```bash
+   git clone <URL_DO_SEU_REPOSITORIO>
+   cd <PASTA_DO_PROJETO>
+
+2. Crie um ambiente virtual e ative-o:
+    python -m venv .venv
+
+3.Instale as dependências:
+    pip install -r requirements.txt
+
+4.Configure as variáveis de ambiente:
+    caso queria usar sua API, mudo a váriavel "GOOGLE_API_KEY" no arquivo .env
+
+### **Uso**
+1.Execute a aplicação:
+    streamlit run src/app.py
+
+2.No navegador, use a interface para:
+    - Fazer o upload de arquivos PDF.
+    - Configurar o tipo de busca (similaridade, threshold ou MMR).
+    - Inserir perguntas relacionadas ao conteúdo dos PDFs.
+
+### **Tecnologias Utilizadas**
+- Streamlit: Para a interface web.
+- LangChain: Para dividir texto e gerenciar cadeias de recuperação.
+- FAISS: Para armazenamento e busca eficiente de embeddings.
+- Google Generative AI: Para geração de respostas usando modelos de linguagem avançados.
+- PyPDF2: Para manipulação de arquivos PDF.
+
+
+
+
+
+
