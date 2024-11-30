@@ -35,8 +35,8 @@ Este projeto utiliza **Streamlit**, **LangChain** e **Google Generative AI** par
     pip install -r requirements.txt
 
 4.Configure as variáveis de ambiente:
-    Crie um arquivo .env na raiz do projeto com o seguinte conteúdo:
-    GOOGLE_API_KEY="SUA_API__KAY"
+    Você pode criar seu proprio arquivo .env na raiz do projeto com o seguinte conteúdo:
+    GOOGLE_API_KEY="SUA_API__KEY"
 
 Acesse esse site para gerar sua API
     https://aistudio.google.com/app/apikey?hl=pt-br
