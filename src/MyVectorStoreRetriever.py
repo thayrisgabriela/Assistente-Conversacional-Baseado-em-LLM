@@ -23,7 +23,7 @@ class MyVectorStoreRetriever(VectorStoreRetriever):
                     query, **self.search_kwargs
                 )
             )
-            # Make the score part of the document metadata
+
             for doc, similarity in docs_and_similarities:
                 doc.metadata["score"] = similarity
             docs = [doc for doc, _ in docs_and_similarities]
@@ -48,7 +48,7 @@ class MyVectorStoreRetriever(VectorStoreRetriever):
                     query, **self.search_kwargs
                 )
             )
-            # Make the score part of the document metadata
+
             for doc, similarity in docs_and_similarities:
                 doc.metadata["score"] = similarity
             docs = [doc for doc, _ in docs_and_similarities]

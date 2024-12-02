@@ -6,8 +6,8 @@ from langchain_community.embeddings import HuggingFaceEmbeddings
 from langchain_google_genai import GoogleGenerativeAIEmbeddings, ChatGoogleGenerativeAI
 from langchain.chains import RetrievalQA
 from langchain.prompts import PromptTemplate
-from prompts import qa_template  # Importando o template de prompts
-from MyVectorStoreRetriever import MyVectorStoreRetriever  # Importando o retriever customizado
+from prompts import qa_template  
+from MyVectorStoreRetriever import MyVectorStoreRetriever  
 import google.generativeai as genai
 import os
 from dotenv import load_dotenv
@@ -123,7 +123,7 @@ def main():
         with st.spinner("Buscando resposta..."):
             chain = get_retrieval_chain(search_type=search_type, score_threshold=score_threshold)
             response = chain.run(user_question)
-            st.write("Resposta:", response)  # Acessa apenas a chave 'result'
+            st.write("Resposta:", response) 
 
 
 if __name__ == "__main__":
